@@ -5,9 +5,6 @@ const int RS_PIN = 8, EN_PIN = 9, D4_PIN = 4, D5_PIN = 5, D6_PIN = 6, D7_PIN = 7
 const int BACKLIGHT_PIN = 10;
 const int BUTTON_INPUT_PIN = A0;
 
-// Button definitions
-const int BUTTON_DELAY = 200;
-
 // Game names
 const char* games[] = { "Reaction Time", "Memory Game", "Countdown", "Maze Game", "Guess Number" };
 const int NUM_GAMES = sizeof(games) / sizeof(games[0]);
@@ -30,6 +27,9 @@ const Button buttons[] = {
   { 1000, "Reset" },
   { 1024, "" }
 };
+
+// Button definitions
+const int BUTTON_DELAY = 200;
 
 const int BUTTON_RIGHT = 0;
 const int BUTTON_UP = 1;
